@@ -12,6 +12,8 @@ function App() {
   }
 
   function deleteNumber() {
+    if (currentNumber.length === 0) return;
+
     setCurrentNumber(oldCurrentNumber => oldCurrentNumber.slice(0, -1))
   }
 
